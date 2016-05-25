@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimaryLight"
+    android:fillViewport="false">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryLight"
+        android:id="@+id/charListLayout"
+        tools:context="com.masham31.destinystats.CharacterList">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textColor="@color/primary_text_material_light"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:id="@+id/response"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:id="@+id/guardian0"
+            android:onClick="startCharActivity">
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/emblem0"
+                />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:id="@+id/background0"
+                android:layout_alignParentBottom="true"
+                android:scaleType="centerCrop"
+                android:layout_toEndOf="@+id/emblem0" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/guardian1"
+            android:paddingTop="10dp"
+            android:onClick="startCharActivity">
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/emblem1"
+                />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:id="@+id/background1"
+                android:scaleType="centerCrop"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/emblem1" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:id="@+id/guardian2"
+            android:onClick="startCharActivity">
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/emblem2"
+                />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:id="@+id/background2"
+                android:scaleType="centerCrop"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/emblem2" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="17dp"
+            android:text="Clan Name"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text_material_light"
+            android:background="@color/colorPrimaryDark"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/clanTag"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/primary_text_material_light"/>
+    </LinearLayout>
+</ScrollView>
